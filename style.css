@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.bg-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 450px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 21px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 30px hsl(222, 20%, 90%);
+}
+
+.info-area{
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.primary {
+    color: #24355D;
+}
+
+.secondary{
+    color: #969BB0;
+}
+
+.pricing-container {
+    background-color: #F8F9FE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.flex-row{
+    display: flex;
+}
+
+.pricing-info{
+    margin-left: 25px;
+}
+
+.weight-500{
+    font-weight: 500;
+}
+
+.weight-700{
+    font-weight: 700;
+}
+
+.weight-900{
+    font-weight: 900;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 12px 20px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.invisible{
+    border: none;
+    background-color: inherit;
+}
+
+.pricing-btn{
+    text-decoration: underline;
+    color: #776EC9;
+    font-size: 13px;
+}
+
+.pricing-btn:hover{
+    text-decoration: none;
+    color: #766CF1;
+}
+
+.payment{
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+
+    box-shadow: 0 20px 30px hsl(222, 20%, 90%);
+}
+
+.payment:hover{
+    background-color: #766CF1;
+}
+
+.cancel{
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 0 !important;
+}
+
+.cancel:hover{
+    color: #24355D;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 90vw;
+    }
+    .bg-img {
+        display: block;
+        margin: auto;
+    }
+}
