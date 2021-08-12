@@ -9,6 +9,7 @@ body {
     width: 100vw;
     
     font-family: 'Red Hat Display', sans-serif;
+    
 }
 
 .bg-img{
@@ -66,6 +67,7 @@ main {
 }
 
 .pricing-container {
+    border: 2px dotted  purple;
     background-color: #F8F9FE;
     display: flex;
     align-items: center;
@@ -152,5 +154,9 @@ main {
     .bg-img {
         display: block;
         margin: auto;
+    }
+
+    .info-area{
+        padding: 1em;
     }
 }
